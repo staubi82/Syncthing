@@ -93,5 +93,3 @@ systemctl status syncthing@syncthing
 ```http
 http://[Ihre-IP]:8384
 ```
-
-Die IP-Adresse des Servers wird am Ende der Installation im Skript angezeigt.
