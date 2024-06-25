@@ -43,4 +43,4 @@ IP=$(hostname -I | awk '{print $1}')
 echo -e "\n\n##############################################"
 echo "Installation abgeschlossen. Du kannst jetzt auf die Syncthing-Web-Oberfläche zugreifen:"
 echo "http://$IP:8384"
-echo "##############################################\n\n"
+echo "#####################################################"
