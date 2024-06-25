@@ -1,6 +1,3 @@
-Natürlich, hier ist die angepasste Anleitung:
-
----
 
 ### Syncthing auf Debian installieren und konfigurieren
 
