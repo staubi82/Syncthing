@@ -3,10 +3,10 @@
 # Paketquellen aktualisieren und benötigte Pakete installieren
 apt-get update
 apt-get upgrade -y
-apt-get install gnupg2 curl apt-transport-https -y
+apt-get install gnupg2 wget apt-transport-https -y
 
 # Syncthing Repository hinzufügen und Paketquellen aktualisieren
-curl -s https://syncthing.net/release-key.txt | apt-key add -
+wget -qO- https://syncthing.net/release-key.txt | apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing release" > /etc/apt/sources.list.d/syncthing.list
 apt-get update -y
 
@@ -38,3 +38,8 @@ EOT
 systemctl daemon-reload
 systemctl start syncthing@syncthing
 systemctl status syncthing@syncthing
+
+# Hinweis zur Web-Oberfläche mit IP-Adresse anzeigen
+IP=$(hostname -I | awk '{print $1}')
+echo "Installation abgeschlossen. Du kannst jetzt auf die Syncthing-Web-Oberfläche zugreifen:"
+echo "http://$IP:8384"
