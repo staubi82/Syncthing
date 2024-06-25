@@ -6,7 +6,7 @@
 Um Syncthing auf Debian zu installieren und zu konfigurieren, führen Sie das folgende Skript aus. Es erledigt alle notwendigen Schritte automatisch:
 
 ```bash
-bash -c "$(wget -qO- https://raw.githubusercontent.com/staubi82/syncthing/main/install_syncthing.sh)"
+bash -c "$(wget -qO- https://raw.githubusercontent.com/staubi82/syncthing-install-script/main/install_syncthing.sh)"
 ```
 
 #### 2. Manuelle Schritte zur Installation und Konfiguration
